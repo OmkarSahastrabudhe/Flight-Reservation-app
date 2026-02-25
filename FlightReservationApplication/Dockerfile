@@ -12,6 +12,6 @@ WORKDIR /app
 COPY --from=build /app/target/  /app/
 
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "FlightReservationApplication-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "FlightReservationApplication-0.0.1-SNAPSHOT.jar"]
 
  
